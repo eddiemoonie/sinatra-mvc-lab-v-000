@@ -1,5 +1,3 @@
-require 'pry'
-
 class PigLatinizer
 
   def piglatinize(phrase)
@@ -27,7 +25,7 @@ class PigLatinizer
       word = word.slice(1..-1) + word.slice(0)
     end
 
-    word + "ay"
+    word << "ay"
   end
 
   def piglatinize_sentence(sentence)
