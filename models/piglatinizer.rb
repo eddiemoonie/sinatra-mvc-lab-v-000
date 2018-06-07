@@ -1,9 +1,11 @@
 class PigLatinizer
 
   def piglatinize(phrase)
-    x = (phrase.split(" ").length == 1) ? piglatinize_word(phrase) : piglatinize_sentence(phrase)
-    puts x
-    x
+    if phrase.split(" ").length == 1
+      piglatinize_word(phrase)
+    else
+      piglatinize_sentence(phrase)
+    end
   end
 
   private
